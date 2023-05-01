@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const todoTaskSchema = new mongoose.Schema({
 content: {
 type: String,
+unique: true,
 required: true
 },
 date: {
